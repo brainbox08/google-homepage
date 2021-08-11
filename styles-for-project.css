@@ -1,6 +1,8 @@
-html{
+html, body{
 height: 100%;
+width: 100%;
 min-height: 100%;
+min-width: 100%;
 }
 
 /*header*/
@@ -86,4 +88,37 @@ a:hover{
     justify-self: center;
     align-self: center;
 
+}
+
+/*Footer*/
+
+#footer{
+    display: grid;
+    grid-template-columns: 100px 100px 150px 1fr 80px 80px 80px;
+    grid-template-rows: 50px;
+    grid-template-areas: "advertising business hsw . privacy terms settings";
+}
+
+#advertising{
+    grid-area: advertising;
+}
+
+#business{
+    grid-area: business;
+}
+
+#how-search-works{
+    grid-area: hsw;
+}
+
+#privacy{
+    grid-area: privacy;
+}
+
+#terms{
+    grid-area: terms;
+}
+
+#settings{
+    grid-area: settings;
 }
